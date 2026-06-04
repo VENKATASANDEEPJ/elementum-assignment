@@ -1,6 +1,6 @@
 import "./Testimonials.css";
 import Container from "../Container/Container";
-import testimonials from "../../data/testimonials";
+import testimonials from "../../Data/testimonials";
 
 function Testimonials() {
   const testimonial = testimonials[0];

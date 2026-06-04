@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import navigation from "../../data/navigation";
+import navigation from "../../Data/navigation";
 
 function Navbar() {
   return (

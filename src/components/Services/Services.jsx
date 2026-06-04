@@ -1,6 +1,6 @@
 import "./Services.css";
 import Container from "../Container/Container";
-import services from "../../data/servicesData";
+import services from "../../Data/servicesData";
 
 function Services() {
   return (
