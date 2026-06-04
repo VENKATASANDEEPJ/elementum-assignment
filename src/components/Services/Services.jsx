@@ -7,7 +7,7 @@ function Services() {
     <section className="services">
       <Container>
         <h2 className="services-heading">
-          What we <span>can</span> offer you!
+          What we <span className="highlight-green">can</span> offer you!
         </h2>
 
         <div className="services-list">
@@ -17,7 +17,7 @@ function Services() {
 
               <h3 className="service-title">{service.title}</h3>
 
-              <span className="service-arrow">→</span>
+              <span className="service-arrow">&rarr;</span>
             </div>
           ))}
         </div>

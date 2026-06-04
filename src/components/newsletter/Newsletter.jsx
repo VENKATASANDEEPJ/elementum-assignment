@@ -7,7 +7,7 @@ function Newsletter() {
       <Container>
         <div className="newsletter-content">
           <h2>
-            Subscribe to <br />
+            <span className="accent-underline">Subscribe</span> to <br />
             our newsletter
           </h2>
 

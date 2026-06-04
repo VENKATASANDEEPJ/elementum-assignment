@@ -6,13 +6,15 @@ function Hero() {
     <section className="hero">
       <Container>
         <h1 className="hero-title">
-          The thinkers and <br />
-          doers were changing <br />
+          The <span className="highlight-green">thinkers</span> and <br />
+          doers were <span className="accent-underline">changing</span> <br />
           the <span className="highlight-green">status</span> Quo with
         </h1>
 
         <div className="square-shape"></div>
         <div className="hero-shape"></div>
+        <div className="hero-curve hero-curve-left"></div>
+        <div className="hero-curve hero-curve-right"></div>
 
         <p className="hero-text">
           We are a team of strategists, designers, communicators,

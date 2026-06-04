@@ -6,16 +6,10 @@
 
 .services-heading {
   font-family: var(--font-heading);
-  font-size: 56px;
-  line-height: 76px;
-  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.05;
+  font-weight: 500;
   margin-bottom: 80px;
-}
-
-.services-heading span {
-  background: #dcefdc;
-  padding: 0 12px;
-  border-radius: 25px;
 }
 
 .service-row {
@@ -33,22 +27,25 @@
 
 .service-description {
   font-family: var(--font-body);
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 21px;
+  line-height: 1.36;
   max-width: 170px;
   color: #444;
 }
 
 .service-title {
   font-family: var(--font-heading);
-  font-size: 56px;
-  line-height: 116px;
-  font-weight: 400;
+  font-size: 62px;
+  line-height: 1.08;
+  font-weight: 500;
 }
 
 .service-arrow {
+  font-family: var(--font-body);
   font-size: 2rem;
+  font-weight: 500;
   justify-self: end;
+  color: var(--purple);
 }
 
 @media (max-width: 768px) {

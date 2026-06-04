@@ -1,6 +1,6 @@
 .newsletter {
   background: #dcebd8;
-  padding: 120px 0 90px;
+  padding: 116px 0 94px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -13,24 +13,27 @@
 
 .newsletter h2 {
   font-family: var(--font-heading);
-  font-size: 100px;
-  line-height: 116px;
-  font-weight: 400;
+  font-size: 104px;
+  line-height: 0.98;
+  font-weight: 500;
+  max-width: 100%;
+  overflow-wrap: break-word;
   margin-bottom: 26px;
 }
 
 .newsletter p {
   font-family: var(--font-body);
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 1.45;
   margin-bottom: 40px;
   color: #444;
 }
 
 .newsletter button {
   font-family: var(--font-body);
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 500;
   background: black;
   color: white;
   border: none;
@@ -41,6 +44,7 @@
 
 .newsletter-shape {
   position: absolute;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -49,8 +53,8 @@
   top: 30px;
   width: 88px;
   height: 88px;
-  background: #8b5cf6;
-  opacity: 0.16;
+  background: var(--purple);
+  opacity: 0.18;
   transform: rotate(28deg);
 }
 
@@ -59,7 +63,35 @@
   bottom: 40px;
   width: 64px;
   height: 64px;
-  background: #f5a000;
-  opacity: 0.2;
+  background: var(--orange);
+  opacity: 0.24;
   transform: rotate(38deg);
+}
+
+.newsletter::before,
+.newsletter::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.newsletter::before {
+  left: 13%;
+  top: 90px;
+  width: 170px;
+  height: 78px;
+  border-top: 4px solid var(--orange);
+  transform: rotate(-18deg);
+}
+
+.newsletter::after {
+  right: 15%;
+  bottom: 86px;
+  width: 160px;
+  height: 72px;
+  border-top: 4px solid var(--purple);
+  transform: rotate(22deg);
+  opacity: 0.65;
 }

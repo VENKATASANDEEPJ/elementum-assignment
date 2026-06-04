@@ -1,6 +1,5 @@
 import "./Progress.css";
 import Container from "../Container/Container";
-import heroImage from "../../assets/hero.png";
 
 function Progress() {
   return (
@@ -8,10 +7,10 @@ function Progress() {
       <Container>
         <div className="about-content">
           <div className="about-image">
-            <img src={heroImage} alt="team" />
-            <div className="about-shape square"></div>
-            <div className="about-shape triangle"></div>
-            <div className="curve-line"></div>
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800"
+              alt="team collaboration"
+            />
           </div>
 
           <div className="about-text">
