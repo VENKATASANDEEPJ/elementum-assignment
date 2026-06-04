@@ -1,0 +1,102 @@
+.about {
+  background:
+  radial-gradient(
+    circle at center,
+    rgba(255,180,180,.25),
+    transparent 60%
+  );
+  padding: 140px 0;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-image,
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 28px;
+  display: block;
+}
+
+.about-text {
+  max-width: 520px;
+}
+
+.about-title {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.about-text button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.about-shape {
+  position: absolute;
+  pointer-events: none;
+}
+
+.about-shape.square {
+  width: 70px;
+  height: 70px;
+  border: 4px solid #8b5cf6;
+  right: -24px;
+  top: 24px;
+  transform: rotate(18deg);
+}
+
+.about-shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 38px solid #f5a000;
+  left: -18px;
+  bottom: 80px;
+  transform: rotate(-10deg);
+}
+
+.curve-line {
+  position: absolute;
+  right: 30px;
+  bottom: -30px;
+  width: 180px;
+  height: 90px;
+  border-bottom: 5px solid #c94e4e;
+  border-radius: 0 0 180px 180px;
+  transform: rotate(-8deg);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-title {
+    font-size: 3rem;
+  }
+
+  .curve-line {
+    right: 10px;
+  }
+}

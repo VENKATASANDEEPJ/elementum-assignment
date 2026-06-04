@@ -1,0 +1,62 @@
+.tomorrow {
+  padding: 120px 0;
+}
+
+.tomorrow-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.tomorrow-text {
+  flex: 1;
+}
+
+.tomorrow-text h2 {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  line-height: 76px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.tomorrow-text p {
+  max-width: 520px;
+  font-family: var(--font-body);
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 30px;
+}
+
+.tomorrow-text button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.tomorrow-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.tomorrow-image img {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .tomorrow-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tomorrow-text p {
+    margin: 0 auto 30px;
+  }
+}

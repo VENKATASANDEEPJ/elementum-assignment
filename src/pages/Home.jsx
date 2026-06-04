@@ -1,0 +1,23 @@
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Hero/Hero";
+import Tomorrow from "../components/Tomorrow/Tomorrow";
+import Services from "../components/Services/Services";
+import Testimonials from "../components/Testimonials/Testimonials";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Footer from "../components/Footer/Footer";
+
+function Home() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Tomorrow />
+      <Services />
+      <Testimonials />
+      <Newsletter />
+      <Footer />
+    </>
+  );
+}
+
+export default Home;
